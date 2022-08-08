@@ -1,0 +1,16 @@
+https://github.com/Tarunisai/First-year-C-coding-class.git
+ bool isPowerofTwo(long int n)
+   {
+       if(n==0)
+          return(false);
+       if((n&(n-1))==0)
+          return(true);
+       else
+          return(false);
+   }
+
+Output:
+4
+true
+6 
+false
