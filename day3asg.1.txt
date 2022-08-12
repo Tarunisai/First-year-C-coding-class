@@ -1,0 +1,25 @@
+1)
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    if(a>0)
+    printf("the given no. is positive");
+    else if(a==0)
+    printf("the given no. is zero");
+    else
+    printf("the given no. is negative");
+    return 0;
+}
+
+
+Output:
+enter the value of a
+2
+the given no. is positive
+-5
+the given no. is negative
+0
+the given no. is zero

@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+     float n,i=1,avg;
+    printf("Enter how many numbers");
+    scanf("%f",&n);
+    while(i <= n)
+    {
+       avg=(n+1)/(2);
+       i++;
+        
+    }
+    printf("The average of n numbers = %.2f\n", avg);
+
+    return 0;
+}
+

@@ -1,0 +1,81 @@
+Result 1:
+
+#include <stdio.h>
+int main()
+{
+   int x=10,y=20,res;
+	res=x++ + ++y;
+	printf("%d",res);
+    return 0;
+}
+
+
+Output:
+31
+
+
+
+Result 2:
+
+#include <stdio.h>
+int main()
+{
+   int x=10,y=20,res;
+	res=++x+--y;
+	printf("%d",res);
+    return 0;
+}
+
+
+Output:
+30
+
+
+Result 3:
+
+#include <stdio.h>
+int main()
+{
+   int x=10,y=20,res;
+	res=++x-y; 
+	printf("%d",res);
+    return 0;
+}
+
+
+Output:
+-9
+
+Result 4:
+
+#include <stdio.h>
+int main()
+{
+   int x=10,y=20,res;
+	res=;
+	printf("%d",res);
+    return 0;
+}
+
+
+Output:
+29
+
+
+Result 5:
+
+#include <stdio.h>
+int main()
+{
+   int x=10,y=20,res;
+	res=x--+--y+x++-y++ ;
+	printf("%d",res);
+    return 0;
+}
+
+
+Output:
+19
+
+
+

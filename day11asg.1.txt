@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+{
+   int a,b;
+   scanf("%d%d",&a,&b);
+   while(a<=b)
+   {
+       if(a%5==0 && a%2==0)
+       printf("Aditya college,Kakinada\n");
+       else if(a%5==0 && a%2==1)
+       printf("taruni\n");
+       else
+       printf("%d\n",a);
+       a++;
+   }
+
+    return 0;
+}
+
+Output:
+20 30
+Aditya college,Kakinada
+21
+22
+23
+24
+taruni
+26
+27
+28
+29
+Aditya college,Kakinada
+

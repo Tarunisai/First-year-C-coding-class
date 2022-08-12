@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int n,i=1,s=0;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        if(n%i==0)
+        {
+            s=s+i;
+        }
+        i++;
+    }
+    if(s==2*n)
+    printf("the given no. is perfect no");
+    else
+    printf("the given no. is not perfect no");
+    
+}
+
+Output:
+6
+the given no. is perfect no
+32
+the given no. is not perfect no

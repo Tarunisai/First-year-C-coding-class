@@ -1,0 +1,58 @@
+a)
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int l;
+clrscr();
+printf("Enter the value of l");
+scanf("%d",&l);
+if(l%400==0)
+printf("the given year is leap year");
+else if(l%100==0)
+printf("the given year is not leap year");
+else if(l%4==0)
+printf("the given year is leap year");
+else
+printf("the given year is not leap year");
+getch();
+}
+
+Output:
+Enter the value of l
+1900
+the given year is not leap year
+2016
+the given year is leap year
+
+
+
+
+
+
+
+b)
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char ch;
+clrscr();
+printf("enter the value\n");
+scanf("%c",&ch);
+if((ch>='a' && ch<='z')||(ch>='A' && ch<='Z'))
+printf("it is an alphabet");
+else
+printf("it is not  an alphabet",);
+getch();
+}
+
+Output:
+t
+it is an alphabet
+4
+it is not  an alphabet
+S
+it is an alphabet
+4
+

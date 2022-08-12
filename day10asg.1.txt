@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+ int i=1,n,count=0;
+ scanf("%d",&n);
+ while(i<=n)
+ {
+     if(n%i==0)
+     {
+         count++;
+     }
+     i++;
+     
+ }
+ printf("%d",count);
+ 
+    return 0;
+}
+
+Output:
+5
+2
+
+
+10 
+4

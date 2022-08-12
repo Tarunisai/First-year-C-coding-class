@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    char cname[20];
+    float ic,tax;
+    printf("enter the customer name and income");
+    scanf("%s %f",cname,&ic);
+    if(ic<150000)
+    tax=ic*1;
+    else if(ic>=150000 && ic<=300000)
+    tax=ic*0.1;
+    else if(ic>=300000 && ic<=500000)
+    tax=ic*0.15;
+    else
+     tax=ic*0.20;
+     ic=ic-tax;
+     printf("customer name:%s\n income:%.2f\n********\ntax:%.2f",cname,ic,tax);
+     
+     
+     return 0;
+}
+
+Output:
+enter the customer name and income
+aruni 3500000
+customer name:aruni
+income:297500.00
+********
+tax:52500.00
+
+
+

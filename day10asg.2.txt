@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+int n,i,max=0;
+printf("Enter how many numbers\n");
+scanf("%d",&n);
+printf("Enter numbers\n");
+while(n>0)
+{
+scanf("%d",&i);
+if(i>max)
+max=i;
+n--;
+}
+printf("the largest number is %d",max);
+return 0;
+}
+
+
+Output:
+Enter how many numbers
+4
+Enter numbers
+7 8  2 3
+the largest number is 8
+
+
+Enter how many numbers
+6
+Enter numbers
+10,2,6,18,14,15
+the largest number is 18

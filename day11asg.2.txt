@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+   int n,a,b;
+   scanf("%d%d%d",&n,&a,&b);
+   while(a>=b)
+   {
+       printf("%d",a);
+       a--;
+   }
+    return 0;
+}
+
+
+Output:
+1234
+4 1
+4321
+
+
+5678
+8 5
+8765
