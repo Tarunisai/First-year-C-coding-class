@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int n,i,j,arr[10],f=1,sum=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=1;i<=n;i++)
+    {
+        f=f*i;
+       sum=sum+f;
+    }
+    printf("%d",sum);
+    return 0;
+}
+Output:
+5
+1 2 3 4 5
+153
