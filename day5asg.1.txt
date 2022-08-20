@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main()
 {
     char cname[20];
@@ -7,7 +6,7 @@ int main()
     printf("enter the customer name and income");
     scanf("%s %f",cname,&ic);
     if(ic<150000)
-    tax=ic*1;
+    tax=0;
     else if(ic>=150000 && ic<=300000)
     tax=ic*0.1;
     else if(ic>=300000 && ic<=500000)
@@ -16,8 +15,6 @@ int main()
      tax=ic*0.20;
      ic=ic-tax;
      printf("customer name:%s\n income:%.2f\n********\ntax:%.2f",cname,ic,tax);
-     
-     
      return 0;
 }
 
