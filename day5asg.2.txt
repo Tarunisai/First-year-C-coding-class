@@ -1,6 +1,4 @@
 char* readline();
-
-
 #include<stdio.h>
 int main()
 {
@@ -24,7 +22,7 @@ int main()
   printf("seven");
   if(n==8)
   printf("eight");
-  if(n==1)
+  if(n==9)
   printf("nine");
   }
   else
