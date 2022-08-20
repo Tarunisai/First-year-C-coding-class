@@ -1,22 +1,24 @@
-
 #include <stdio.h>
-
 int main()
 {
-   
-   float n,avg,sum=0,i;
-   scanf("%f",&n);
-   while(i<=n)
-   {
-       sum=sum+i;
-       i++;
-   }
-   avg=sum/n;
-   printf("the avg n natural numbers is %.2f",avg);
-
-    return 0;
+  float n,i,sum=0,m,avg;
+  printf("Enter any number\n");
+  scanf("%f",&n);
+  m=n;
+  printf("Enter numbers\n");
+  while(n>=1)
+  {
+      scanf("%f",&i);
+      sum=sum+i;
+      n--;
+  }
+  avg=sum/m;
+  printf("Average of all numbers=%.2f",avg);
+   return 0;
 }
-
 Output:
-50
-the avg n natural numbers is 25.50
+Enter any number
+4
+Enter numbers
+34 67 98 20
+Average of all numbers=54.75
