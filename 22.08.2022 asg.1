@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int a[100][100],i,j,r,c,sum;
+	int a[100][100],i,j,r,c,sum,n;
 	printf("Enter how many rows \n");
 	scanf("%d",&r);
 	printf("Enter how many cols \n");
@@ -14,14 +14,27 @@ int main()
 			scanf("%d",&a[i][j]);
 		}
 	}
-	for(i=0;i<r;i++)
-	{
-		sum=0;
-		for(j=0;j<c;j++) 
-		{
-			sum=sum+a[i][j]	;
-		}
-		printf(" %d Row sum= %d \n",i+1,sum);		
-	}
-	return 0;
+	printf("Row number\n");
+        scanf("%d",&n);
+        for(i=0;i<r;i++)
+        {
+              for(j=0;j<r;j++)
+	     {
+                   if(i==n)
+                 sum=sum+a[i][j];
+              }
+        }
+        printf("%d Row sum=%d",n,sum);
+      return 0;
 }
+Enter how many rows
+3
+Enter how many columns
+3
+Enter the elements into array
+11 22 33 
+44 55 66
+77 88 99
+Row number
+2
+2 Row sum=264
