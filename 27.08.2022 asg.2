@@ -1,22 +1,25 @@
-#include <stdio.h>
-void main subString(char str[],int n)
+#include<stdio.h>
+#include<string.h>
+void substring(char str[],int n)
 {
-    int i,j,n,k,x,str;
+    int i,j,k,x;
     for(i=1;i<=n;i++)
     {
-        for(j=0;j<=n;j++)
-        {
-            x=j+i;
-            for(k=j;k<x;k++)
-            {
-            printf("%3c",str[k]);
-            }
-            
-            printf("\n");
-        }
+      for(j=0;j<=n-i;j++)
+      {
+          x = j+i;
+           for(k=j;k<x;k++)
+           printf("%3c",str[k]);
+           printf("\n");
+      }
     }
 }
-
+int main()
+{
+    char str[]="abcd";
+    substring(str,strlen(str));
+    return 0;
+}
 Output:
 a
 b
